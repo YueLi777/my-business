@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Yue Li</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box; /* 使用border-box */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif; /* 使用Poppins字体 */
+            background-color: #FFFFFF; /* 白色背景 */
+            color: #000000; /* 黑色文本 */
+            height: 100%; /* 设置body高度为100% */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #000000; /* 黑色背景 */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-family: 'Pacifico', cursive; /* 使用Pacifico字体 */
+            font-size: 36px;
+            color: #FFFFFF; /* 白色文本 */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 20px; /* 加大字体 */
+            color: #FFFFFF; /* 白色文本 */
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFCC00; /* 金色 */
+        }
+
+        .about-me-section {
+            flex: 1; /* 使此部分占据剩余空间 */
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom right, #747471, #8d898a); /* 渐变背景 */
+        }
+
+        .about-me-content {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9); /* 白色背景透明度 */
+            padding: 40px;
+            border-radius: 10px; /* 圆角 */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+        }
+
+        .about-me-content h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #000000; /* 黑色文本 */
+        }
+
+        .introduction {
+            font-size: 22px; /* 加大字体 */
+            line-height: 1.8;
+            margin-bottom: 30px; /* 增加底部间距 */
+        }
+
+        .highlight {
+            color: #ec93af; /* 粉红色 */
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 25px; /* 增加按钮内边距 */
+            border: none;
+            border-radius: 5px;
+            background-color: #000000; /* 黑色背景 */
+            color: #FFFFFF; /* 白色文本 */
+            font-size: 20px; /* 加大字体 */
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s; /* 添加缩放效果 */
+        }
+
+        button:hover {
+            background-color: #77756d; /* 金色 */
+            color: #000000; /* 黑色文本 */
+            transform: scale(1.05); /* 鼠标悬停时缩放效果 */
+        }
+
+        .contact-section {
+            padding: 40px 20px;
+            background: #f0f0f0; /* 浅灰色背景 */
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 34px;
+            color: #000000; /* 黑色文本 */
+            margin-bottom: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+            border: 0px solid #000000; /* 黑色边框 */
+            background: #dfd9d9; /* 白色背景 */
+        }
+
+        .contact-item:hover {
+            background: #000000; /* 鼠标悬停时背景色 */
+            color: #FFFFFF; /* 白色文本 */
+        }
+
+        .contact-icon {
+            font-size: 32px;
+            color: #000000; /* 黑色 */
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            font-size: 18px; /* 加大字体 */
+            margin-top: 10px;
+        }
+
+        .contact-item a {
+            color: #000000; /* 黑色 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000; /* 黑色背景 */
+            color: #FFFFFF; /* 白色文本 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Yue Li</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recommendation-system.html">Recommendation System</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-me-section">
+        <div class="about-me-content">
+            <h2>About Me</h2>
+            <p class="introduction">
+                Hello, I'm <span class="highlight">Yue Li</span>, a software developer with expertise in application development and computer science. I pursued Application Development at North Seattle College and further studied Computer Science at Arizona State University. With a strong technical foundation, I focus on building innovative solutions like personalized recommendation systems.
+            </p>
+            <p>
+                My passion lies in creating efficient algorithms and enhancing user experiences through technology. I believe in the power of data and its ability to transform insights into actionable results. When I'm not coding, you can find me exploring new technologies or enjoying the great outdoors.
+            </p>
+           
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <p>Phone: 425-504-0088</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <p>Instagram: <a href="https://www.instagram.com/personalized.ai" target="_blank">personalized.ai</a></p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yue-li-12799320a/" target="_blank">Yue Li</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yue Li. All rights reserved.</p>
+    </footer>
+</body>
+</html>

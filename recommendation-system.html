@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        header {
+            background: #000000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            color: #FFFFFF;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFFFF;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFCC00;
+        }
+
+        .hero-section {
+            background-color: #D3D3D3; /* 更改为与index页面相同的浅灰色 */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9); /* 增加白色背景透明度 */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 42px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 22px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .features-section {
+            padding: 60px 20px;
+            background-color: #F0F0F0; /* 浅灰色背景 */
+            text-align: center;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background: #FFFFFF;
+            border: 0px solid #000000;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .use-cases-section {
+            padding: 60px 20px;
+            background: #D3D3D3;
+            text-align: center;
+        }
+
+        .use-cases-content {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .use-cases-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .use-case-card {
+            background: #FFFFFF;
+            border: 0px solid #000000;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .use-case-card:hover {
+            transform: scale(1.05);
+        }
+
+        .use-case-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .use-case-card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>Yue Li</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="recommendation-system.html">Recommendation System</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title">Personalized Recommendation System</h2>
+            <p class="hero-description">
+                Transform your customer experience with cutting-edge recommendations.
+                Our solution helps Shopify sellers increase conversion rates, click-through rates, and purchase rates through personalized product suggestions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-card">
+                <h3>Automated Personalization</h3>
+                <p>The system learns customer behavior and preferences to make real-time personalized recommendations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Web & Email Integration</h3>
+                <p>Seamlessly deliver product recommendations via web-friendly pages, emails, and messages.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Adaptive Learning</h3>
+                <p>The model evolves continuously, providing smarter suggestions and maximizing customer engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases-section">
+        <div class="use-cases-content">
+            <h2>Designed for Shopify Sellers</h2>
+            <p>Whether you're managing a small boutique or a large store, our system helps you reach customers more effectively.</p>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3>Increased Conversion</h3>
+                    <p>Recommend the right products at the right time, turning more visitors into customers.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Enhanced Customer Engagement</h3>
+                    <p>Engage your customers with tailored suggestions that resonate with their preferences.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Improved Customer Loyalty</h3>
+                    <p>Build long-term relationships by offering personalized experiences that keep customers coming back.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Yue Li. All rights reserved.</p>
+    </footer>
+</body>
+</html>
